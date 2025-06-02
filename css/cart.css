@@ -1,0 +1,147 @@
+/* ===== STRUCTURE GÉNÉRALE ===== */
+
+.cart-container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 30px auto;
+  padding: 0 30px;
+}
+
+/* ===== TABLEAU DU PANIER ===== */
+.cart-table-wrapper {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+}
+
+.cart-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.cart-table th {
+  background-color: #111;
+  color: white;
+  padding: 16px;
+  text-align: left;
+  font-size: 16px;
+}
+
+.cart-table td {
+  padding: 16px;
+  font-size: 15px;
+  border-top: 1px solid #eee;
+  vertical-align: middle;
+}
+
+.cart-img img {
+  width: 80px;
+  height: auto;
+  border-radius: 6px;
+  object-fit: cover;
+}
+
+.cart-name {
+  font-weight: 600;
+}
+
+.cart-price {
+  color: #333;
+  font-weight: 500;
+}
+
+.cart-action a {
+  background-color: #dc3545;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.cart-action a:hover {
+  background-color: #c82333;
+}
+
+/* ===== TOTAL ET BOUTONS ===== */
+.cart-summary {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.cart-summary h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.cart-summary p {
+  font-size: 18px;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.summary-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.summary-buttons a {
+  padding: 12px 20px;
+  border-radius: 6px;
+  font-size: 15px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn-success {
+  background-color: #28a745;
+  color: white;
+}
+
+.btn-warning {
+  background-color: #ffc107;
+  color: black;
+}
+
+.btn-light {
+  background-color: #6c757d;
+  color: white;
+}
+
+.btn-success:hover {
+  background-color: #218838;
+}
+
+.btn-warning:hover {
+  background-color: #e0a800;
+}
+
+.btn-light:hover {
+  background-color: #5a6268;
+}
+
+/* ===== RESPONSIVE ===== */
+@media screen and (max-width: 768px) {
+  .cart-container {
+    padding: 15px;
+  }
+  .cart-img img {
+    width: 60px;
+  }
+  .summary-buttons {
+    flex-direction: column;
+  }
+  .summary-buttons a {
+    width: 100%;
+  }
+}

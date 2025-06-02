@@ -1,0 +1,70 @@
+
+
+.carte-utilisateur {
+    background-color: white;
+    width: 60%;
+    margin: 40px auto;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    padding: 30px;
+    text-align: center;
+}
+
+.photo-profil {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.infos-utilisateur p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.infos-utilisateur strong {
+    color: #4CAF50;
+}
+
+.titre-section {
+    text-align: center;
+    margin-top: 60px;
+    font-size: 22px;
+    color: #222;
+}
+
+.grille-photos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 40px;
+}
+
+.carte-photo {
+    background-color: white;
+    width: 220px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: transform 0.2s ease-in-out;
+}
+
+.carte-photo:hover {
+    transform: translateY(-5px);
+}
+
+.carte-photo img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    display: block;
+}
+
+.carte-photo p {
+    padding: 10px;
+    font-size: 15px;
+    color: #444;
+}

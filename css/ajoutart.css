@@ -1,0 +1,46 @@
+label {
+    font-size: medium;
+    color: grey;
+}
+.Carte {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px;
+    width: 50%;
+    display: block;
+    margin: auto;
+    padding: 2%;
+    margin-top: 2%;
+    background-color: white;
+}
+
+.rien {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px;
+    width: 50%;
+    margin: auto;
+    padding: 2%;
+    margin-top: 2%;
+    background-color: white;
+}
+
+.categ{
+    margin-left: 4%;    
+}
+
+.btn3 {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+}
+
+h5 {
+    color: grey;
+}

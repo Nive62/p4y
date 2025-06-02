@@ -1,0 +1,86 @@
+/* 🌙 Mode sombre général */
+body.dark-mode {
+  background-color: #111;
+  color: #eee;
+}
+
+/* 🧱 Header global */
+header {
+  background-color: #111;
+  padding: 10px 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  position: relative;
+  z-index: 1000;
+}
+
+/* 🧭 Navigation horizontale */
+.enteteul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* 🧩 Élément de navigation */
+.enteteli {
+  margin: 0 10px;
+}
+
+/* 🔗 Liens */
+.entetea {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: 0.3s ease;
+}
+
+/* 🔘 État au survol */
+.entetea:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* ✅ Lien actif */
+.entetea.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+/* ✅ Bouton spécial inscription (si utilisé en tant que tel) */
+.enteteli a.btn-inscription,
+.enteteli .btn-inscription {
+  background-color: #04AA6D;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.enteteli a.btn-inscription:hover,
+.enteteli .btn-inscription:hover {
+  background-color: #038f5a;
+}
+
+/* 🖥️ Responsive pour mobile */
+@media screen and (max-width: 768px) {
+  .enteteul {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .enteteli {
+    margin: 5px 0;
+  }
+
+  .entetea,
+  .enteteli a.btn-inscription {
+    display: block;
+    width: 100%;
+  }
+}
